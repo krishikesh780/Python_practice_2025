@@ -1,6 +1,6 @@
 # CRUD and 
 # Dict, list, Json
-# filter & sort
+# filter & sort, sorted and map function
 # datetime function
 # file system and path system
 # SQL Database, Excel sheet related Library
@@ -31,7 +31,7 @@ def dict_read():
     print(f'items: {result.items()}')
     for k, v in result.items():
         print(f"{k}: {v}")
-
+        
 def dict_update():
     # updatd({})
     result=dict_practice()
@@ -40,7 +40,7 @@ def dict_update():
     result['k5']=55
     print(f'Updated 2times Dict: {result}')
 
-
+    
 def dict_delete():
     result=dict_practice()
     print(f"Key List: {list(result.keys())}")
@@ -53,15 +53,15 @@ def dict_delete():
 
 def dict_sort():
     result=dict_practice()
-
+    
 
 
 def dict_operation():
     dict_read()
     dict_update()
     dict_delete()
-
-
+    
+    
 dict_operation()
 
 # list method
@@ -71,3 +71,4 @@ l1=[i for i in l]
 l1.append(6)
 
 print(l1, l)
+    
